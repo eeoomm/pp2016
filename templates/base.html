@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+<head>
+	<title>Parque Cientifico y Tecnologico</title>
+
+  <link rel="stylesheet" type="text/css" href="/static/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/materialize.mi.css">
+<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="http://www.uaeh.edu.mx/css/style-uaeh-internas_ex.css"> 
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" type="text/css" href="/static/css/footer.css">
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="{%url 'antecedentes'%}">Antecedentes</a></li>
+  <li><a href="{%url 'funciones'%}">Funciones</a></li>
+  <li><a href="{%url 'mision'%}">Misión y Visión</a></li>
+  <li><a href="{%url 'objetivo'%}">Objetivo</a></li>
+</ul>
+<ul id="dropdown2" class="dropdown-content">
+  <li><a href="{%url 'ope'%}">Manual de Operaciones PCyT</a></li>
+  <li><a href="{%url 'pro'%}">Manual de Procedimientos PCyT</a></li>
+  <li><a href="{%url 'idef'%}">Matriz de Identificación PCyT</a></li>
+  <li><a href="{%url 'organi'%}">Organigrama</a></li>
+</ul>
+
+ <nav class="red darken-4 hoverable">
+  <div class="container">
+    <div class="nav-wrapper">
+      <a href="{%url 'con'%}" class="brand-logo"><img src="/static/pcyt_b.png" width="90" height="63"></a>
+      
+      <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-downs">
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Quienes somos<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="https://www.uaeh.edu.mx/pcyt/ot/" target="_blank">Oficina de Transferencia</a></li>
+        <li><a href="{%url 'planta'%}">Planta Piloto</a></li>
+        <li><a href="{%url 'noti'%}">Noticias</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Documentos Administrativos<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="{%url 'contacto'%}">Contacto</a></li>
+        
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+      <li><a href="{%url 'antecedentes'%}">Antecedentes</a></li>
+      <li><a href="{%url 'funciones'%}">Funciones</a></li>
+      <li><a href="{%url 'mision'%}">Misión y Visión</a></li>
+      <li><a href="{%url 'objetivo'%}">Objetivo</a></li>
+      <li><a href="https://www.uaeh.edu.mx/pcyt/ot/" target="_blank">Oficina de Transferencia</a></li>
+      <li><a href="{%url 'planta'%}">Planta Piloto</a></li>
+      <li><a href="{%url 'noti'%}">Noticias</a></li>
+      <li><a href="{%url 'ope'%}">Manual de Operaciones PCyT</a></li>
+      <li><a href="{%url 'pro'%}">Manual de Procedimientos PCyT</a></li>
+      <li><a href="{%url 'idef'%}">Matriz de Identificación PCyT</a></li>
+      <li><a href="{%url 'organi'%}">Organigrama</a></li>
+      <li><a href="{%url 'contacto'%}">Contacto</a></li>
+
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+
+	
+    {% block content %}
+	{% endblock content %}
+
+
+
+
+
+
+
+
+
+ <footer class="page-footer red darken-4 hoverable">
+
+
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Parque Científico y Tecnológico<br>de la Universidad Autonoma del Estado de Hidalgo</h5>
+
+                <p class="grey-text text-lighten-4">Torres de Rectoría 3er piso. Carretera Pachuca –Actopan Km, 4.<br>
+                                                    CP.42039 Pachuca Hidalgo, México<br>
+                                                    Tel (52) 01 771 71 7 2000 Ext. 2790<br>
+                                                    Email: transferencia@uaeh.edu.mx <br></p>
+              </div>
+              <div>
+                 <center> <a href="https://www.uaeh.edu.mx/" target="_blank" class="brand-logo"><img src="/static/logo_uaeh.png" target="_blank" width="130" height="55"></a><br>
+           <p><font color="white">"Amor, Orden y Progreso"</font></p></center>
+              </div>
+
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+
+
+                <span class="soc fa-stack fa-lg">
+                <a href="https://www.facebook.com/UAEH.edu/?fref=ts" class="soc">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse f-style"></i>
+                </a>
+                </span>
+                
+                <span class="soc fa-stack fa-lg">
+                <a href="https://twitter.com/UAEH_OFICIAL" class="soc">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse f-style"></i>
+                </a>
+                </span>
+                <span class="soc fa-stack fa-lg">
+                <a href="https://www.instagram.com/uaeh_comsoc/" class="soc">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse f-style"></i>
+                </a>
+                </span>
+                <span class="soc fa-stack fa-lg">
+                <a href="https://www.youtube.com/user/uaehcomsoc" class="soc">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-youtube fa-stack-1x fa-inverse f-style"></i>
+                </a>
+                </span>
+                 <span class="soc fa-stack fa-lg">
+                <a href="https://es.linkedin.com/edu/universidad-aut%C3%B3noma-del-estado-de-hidalgo-15080" class="soc">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse f-style"></i>
+                </a>
+                </span>  
+                    
+
+
+                    {%if request.user.is_authenticated%}
+                    <br>
+                    <span class="fa-stack icon_mi" title="Investigadores">
+                    <a href="{%url 'inv'%}" class="soc">
+                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i> 
+                    <i class="fa fa-flask fa-stack-1x"></i> </a>
+                    </span>
+
+                    </span>
+                    <span class="fa-stack icon_mi" title="Nueva Noticia">
+                    <a href="{%url 'nuevo'%}" class="soc">
+                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i> 
+                    <i class="fa fa-newspaper-o fa-stack-1x"></i></a> 
+                    </span>
+                    
+                    <span class="fa-stack icon_mi" title="Agenda">
+                    <a href="{%url 'agenda'%}" class="soc" >
+                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i> 
+                    <i class="fa fa-book fa-stack-1x" ></i> </a>
+                    </span>
+                    <span class="fa-stack icon_mi" title="Nuevo Agenda">
+                    <a href="{%url 'nuevagen'%}" class="soc" >
+                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i> 
+                    <i class="fa fa-pencil fa-stack-1x" ></i> </a>
+                    </span>
+
+                    </span>
+                    <span class="fa-stack icon_mi" title="Cerrar">
+                    <a href="{%url 'logout'%}" class="soc">
+                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i> 
+                    <i class="fa fa-times-circle fa-stack-1x"></i> </a>
+                    </span>
+
+                    
+
+                                       
+                    {%else%}
+                    
+                    <br>
+                    <span class="soc fa-stack fa-lg">
+                    <a href="{%url 'login'%}" class="soc">
+                    <i class="fa-stack-2x"></i>         
+                    <i class="material-icons">vpn_key</i>
+                    </a>
+                    </span>
+                    {%endif%}
+                
+                </ul>
+              </div>
+            </div>
+          
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 Copyright PCYT
+            <a class="grey-text text-lighten-4 right" href="#!">Parque Científico y Tecnológico</a>
+            </div>
+          </div>
+
+</footer>
+            
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<script type="/static/js/jquery.js"></script>
+<script type="/static/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".button-collapse").sideNav();
+   $('.carousel').carousel();
+   $('.slider').slider({full_width: true});
+});
+</script>
+
+</body>
+</html>

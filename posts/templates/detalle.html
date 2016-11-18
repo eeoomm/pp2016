@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+{%block content%}
+<div class="container">
+ 
+   
+      
+       <a href="{%url 'con'%}">Inicio</a> <span id="mayorQ">&gt;</span><strong><a href="{%url 'noti'%}">Noticias</a></strong><span id="mayorQ">&gt;</span> <strong>{{post.titulo}}</strong>
+      
+      
+<center><h1>{{post.titulo}}</h1></center><br>
+<p>{{post.cuerpo}}</p>
+<center><img src="{{post.imagen.url}}"></center>
+
+</div>
+
+{%endblock content%}

@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<div container>
+<center>
+{%if form.errors%}
+<p>Tu usuario y contrasea no coinciden intenta de nuevo</p>
+<a href="{%url 'login'%}">Iniciar Sesión</a>
+{%else%}
+<form action="{%url 'login'%}" method="post">
+	{%csrf_token%}
+	{{form.as_p}}
+		<input type="hidden" name="next" value="{%url 'con'%}"/>
+		<input type="submit" value="Iniciar Sesión">
+
+</form>
+{%endif%}
+</center>
+</div>
+
+{%endblock content%}

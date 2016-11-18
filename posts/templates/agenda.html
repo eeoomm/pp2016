@@ -1,0 +1,57 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+{%if request.user.is_authenticated%}
+<center><h3>Agenda</h3></center>
+
+
+              
+<div class="valing-wrapper">
+<table class="striped">
+	<thead>
+		<tr>
+			<th data-field="id">Nombre</th>
+			<th data-field="id">Instituto/Empresa</th>
+			<th data-field="id">Cargo</th>
+			<th data-field="id">Email</th>
+			<th data-field="id">Telefono</th>
+			<th data-field="id">Extención</th>
+			<th data-field="id">Celular</th>
+			<th data-field="id">Dirección</th>
+			<th data-field="id">Producto</th>
+		</tr>
+	</thead>
+
+	
+
+<tbody>
+	{%for post in posts%}
+	<tr>
+		<td>{{post.nombre}}</td>_
+		<td>{{post.institucion_empresa}}</td>
+		<td>{{post.cargo}}</td>
+		<td>{{post.email}}</td>
+		<td>{{post.telefono}}</td>
+		<td>{{post.ext}}</td>
+		<td>{{post.celular}}</td>
+		<td>{{post.direccion}}</td>
+		<td>{{post.producto}}</td>
+	</tr>
+	{%endfor%}
+</tbody>
+              
+</table>
+
+
+
+</div>
+<a href="{%url 'logout'%}">Cerrar Sesión</a>
+		{%else%}
+		
+		<a href="{%url 'login'%}">Iniciar Sesión</a>
+		</form>
+		{%endif%}
+
+
+{%endblock content%}
